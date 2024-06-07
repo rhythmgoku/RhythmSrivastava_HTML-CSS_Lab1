@@ -1,0 +1,52 @@
+dropdown.css
+body {
+    margin: 0;
+}
+h1 {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+.menu {
+    background-color: #7F7F7F;
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+    padding: 10px;
+
+}
+.menu li:hover {
+    background-color: black;
+
+}
+
+.menu li:nth-child(2):hover #dropdown_first, .menu li:nth-child(3):hover #dropdown_second {
+    display: block;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#dropdown_first, #dropdown_second {
+    display: none;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 130px;
+    padding: 0;
+    width: auto;
+    max-width: 150px;
+}
+
+#dropdown_first li, #dropdown_second li {
+    display: block;
+}
+#dropdown_first li:hover, #dropdown_second li:hover {
+    background-color: #F5F5F5;
+}
+#dropdown_first li a, #dropdown_second li a  {
+    color: #AFC6DA;
+    font-size: 15px;
+}
